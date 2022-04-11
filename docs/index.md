@@ -6,5 +6,5 @@ Technology plays an important role in streamlining education system in today‘s
 
 The system will also provide a platform which facilitates staff-to-staff and teacher-to-parent communication where teachers can share student reports and send emails concerning students performance and disciplinary records.
 
-## The Envisaged System
+## The envisaged system
 
