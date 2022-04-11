@@ -1,0 +1,8 @@
+site_name: SMS
+#theme:
+#  name: 'readthedocs'
+
+nav:
+    - Overview: index.md
+    - Features: features.md
+    
