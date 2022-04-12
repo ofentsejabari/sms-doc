@@ -7,40 +7,29 @@ Technology plays an important role in streamlining education system in today‘s
 !!! success ""
     The system will also provide a platform which facilitates staff-to-staff and teacher-to-parent communication where teachers can share student reports and send emails concerning students performance and disciplinary records.
 
+Below are the active modules on our current release:
 
-<div class="grid cards" markdown>
+- [x] **[School Administration](/modules/school-admin)**
+    * Create schools, batches & classes, subjects and academic terms.
 
--   :material-clock-fast:{ .lg .middle } __Set up in 5 minutes__
+- [x] **[Student Management](/modules/student-management)**
+    * Student enrolment, classes & subject allocations, subject learning resources, assessments and associated reports.
 
-    ---
+- [x] **[Teacher Management](/modules/teacher-management)**
+    * Teacher enrolment, taught classes & subjects assignment and subject learning resources.
 
-    Install [`mkdocs-material`](#) with [`pip`](#) and get up
-    and running in minutes
+- [x] **[Student Assessment](/modules/assessments)**
+    * Create assessments, schedule classes and capture/ update student records.
 
-    [:octicons-arrow-right-24: Getting started](#)
+- [x] **[User Management](/modules/user-management)**
+    * Create authority groups, user role and system users
 
--   :fontawesome-brands-markdown:{ .lg .middle } __It's just Markdown__
-
-    ---
-
-    Focus on your content and generate a responsive and searchable static site
-
-    [:octicons-arrow-right-24: Reference](#)
-
--   :material-format-font:{ .lg .middle } __Made to measure__
-
-    ---
-
-</div>
+___
 
 
 
-
-
-- [x] Lorem ipsum dolor sit amet, consectetur adipiscing elit
-- [ ] Vestibulum convallis sit amet nisi a tincidunt
-    * [x] In hac habitasse platea dictumst
-    * [x] In scelerisque nibh non dolor mollis congue sed et metus
-    * [ ] Praesent sed risus massa
-- [ ] Aenean pretium efficitur erat, donec pharetra, ligula non scelerisque
+- [ ] Inventory Management
+- [ ] Finance Management
+- [ ] Library Management
+- [ ] Timetable
 
