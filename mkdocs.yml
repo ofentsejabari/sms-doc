@@ -8,12 +8,26 @@ theme:
         scheme: default # default, slate
         primary: green # red, pink, purple, deep purple, indigo, blue, light blue, cyan,teal,
                        # green,light green,lime,yellow,amber,orange,deep orange,brown,grey,blue grey,black,white
-        
+markdown_extensions:
+    - attr_list
+    - md_in_html
+    - admonition
+    - pymdownx.details
+    - pymdownx.superfences
+    - def_list
+    - pymdownx.tasklist:
+        custom_checkbox: true
+    - pymdownx.emoji:
+        emoji_index: !!python/name:materialx.emoji.twemoji
+        emoji_generator: !!python/name:materialx.emoji.to_svg
+
 nav:
     - Home: index.md
     - Modules: 
         - School Admin: modules/school-admin.md
         - Student Management: modules/student-management.md
+        - Teacher Management: modules/teacher-management.md
+        - Student Assessments: modules/assessments.md
         - User Management: modules/user-management.md
     - System Architecture: architecture.md
     
