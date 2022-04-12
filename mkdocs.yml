@@ -12,7 +12,8 @@ theme:
 nav:
     - Home: index.md
     - Modules: 
-        - User Management: modules/user-management.md
+        - School Admin: modules/school-admin.md
         - Student Management: modules/student-management.md
+        - User Management: modules/user-management.md
     - System Architecture: architecture.md
     
