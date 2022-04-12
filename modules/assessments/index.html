@@ -13,7 +13,7 @@
     
     
       
-        <title>User Management - SMS Docs</title>
+        <title>Student Assessments - SMS Docs</title>
       
     
     
@@ -63,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#user-management" class="md-skip">
+        <a href="#student-assessments" class="md-skip">
           Skip to content
         </a>
       
@@ -95,7 +95,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              User Management
+              Student Assessments
             
           </span>
         </div>
@@ -316,20 +316,6 @@
               
   
   
-  
-    <li class="md-nav__item">
-      <a href="../assessments/" class="md-nav__link">
-        Student Assessments
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
     
   
   
@@ -342,12 +328,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          User Management
+          Student Assessments
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        User Management
+        Student Assessments
       </a>
       
         
@@ -366,13 +352,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#introduction" class="md-nav__link">
-    Introduction
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#features" class="md-nav__link">
     Features
   </a>
@@ -383,6 +362,20 @@
   
 </nav>
       
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user-management/" class="md-nav__link">
+        User Management
+      </a>
     </li>
   
 
@@ -436,13 +429,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#introduction" class="md-nav__link">
-    Introduction
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#features" class="md-nav__link">
     Features
   </a>
@@ -463,36 +449,52 @@
                 
 
 
-<h1 id="user-management">User Management</h1>
-<h2 id="introduction">Introduction</h2>
-<p>This is one of the inherent modules to any system with controlled access. It is responsible to grant different levels of access to various <code>administration levels</code>. </p>
+<h1 id="student-assessments">Student Assessments</h1>
+<p>Quick and easy tracking of student assessments and results.</p>
 <h2 id="features">Features</h2>
 <ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <code>Creating/edit authority group</code>.  Users can group authorities/ access previledges into small, manageable and related fuctionalities according to their needs/ school policies and assign then to different user roles.</li>
-</ul>
-<p><img alt="Authority Groups" src="../../img/authority-group.png" /></p>
-<div class="admonition info">
-<p class="admonition-title">Warning</p>
-<p>System pre-defined authority-group names cannot be modified as they are treated as special  names in the system.</p>
-</div>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <strong><code>Create different types of assessments</code></strong>.
+    The current implementation support assessment of type Exams, Tests, Mock Exams and Quizzes.To create an assessment, go to <strong><code>Tests &amp; Exams</code></strong>, select batch from a list of active batches then click <strong><code>Create</code></strong>.</p>
+<p><img alt="Create Batch" src="../../img/assessments.png" width="100%" /></p>
 <ul class="task-list">
 <li class="task-list-item">
-<p><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <code>Create/ edit user roles</code> - In the current version of the system, a user can only have one user role. User roles, on the other hand, are tied to numerous authority groups. </p>
+<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> By selecting a reviewer when creating an assessment automatically triggers the start of an approval process.<code>Assessment reviewers are system users with the privilege to approve assessments</code>. </p>
 </li>
 <li class="task-list-item">
-<p><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> System Users. There are two kinds of personnel in the system and their user accounts are created with a somewhat different approaches:</p>
+<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Once assessment has been created, it become available in a list of <code>in progress</code> assessment. Click on assessment name to view its details and if you are the designated handler, you will be prompted to either approve return to creator or cancel with comments as depicted below.</p>
+</li>
+</ul>
+<p><img alt="approval process" src="../../img/approval-process.png" width="100%" /></p>
 <ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Creating users from the existing profiles, e.g. <code>Teachers</code>. Teachers profiles are created prior to their user accounts. Their profiles exists even if they do not have user accounts. </li>
-</ul>
-<p><img alt="Authority Groups" src="../../img/teacher-account.png" /></p>
-<p>Go to teacher profile then <code>Actions -&gt; Create user account</code> to create their user account. The email account provide when creating teacher profile will be used as the username. If you opt for system generated password, the system will generate password and send it to the user`s email. You may also create a password for the user and the user will be prompted to change it on first login in both cases</p>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Exams are created at system admin level by a privileged user and the approval process is within this level of access, whereas other types of assessments are created at school level.</p>
 </li>
-<li>
-<p>System and school admin users, e.g. <code>School Admin</code>, <code>Bursar</code>, etc. Their profiles exists because of their user accounts. </p>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Contrary to other  assessments, which are specific to school, exams are made available to all schools under your administration once approval process has been completed.</p>
 </li>
 </ul>
-<p><img alt="Authority Groups" src="../../img/users.png" /></p>
-<p><code>To create user, go to system users then add user</code>.</p>
+</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <strong><code>Schedule assessment for classes</code></strong>.
+Once approval process is complete, privileged users can now schedule assessments for classes. Class schedule will appear on a list of assessment class schedules as depicted below</p>
+</li>
+</ul>
+<p><img alt="Schedule classes" src="../../img/schedules.png" width="100%" /></p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <strong><code>Record student marks</code></strong>.
+After student has written the assessment on the sheduled date, teachers will now capture student marks back into the system. Click on class name on a list of scheduled classes and you will be presented with a view below:</li>
+</ul>
+<p><img alt="Schedule classes" src="../../img/student-marks.png" width="100%" /></p>
+<ul class="task-list">
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> The view presents an extreamly user-friendly interface for adding and updating student marks. It supports custom user remarks when updating student marks. </p>
+</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <strong><code>Custom Grading Schemes</code></strong>.
+Users can define custom grading scheme to suit the school policies. Once defined, the grading schemes can  be used on assessments of different types and possible different streams.</p>
+</li>
+</ul>
 
               
             </article>
@@ -506,7 +508,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../assessments/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Student Assessments" rel="prev">
+        <a href="../teacher-management/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Teacher Management" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -515,20 +517,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Student Assessments
+              Teacher Management
             </div>
           </div>
         </a>
       
       
         
-        <a href="../../architecture/" class="md-footer__link md-footer__link--next" aria-label="Next: System Architecture" rel="next">
+        <a href="../user-management/" class="md-footer__link md-footer__link--next" aria-label="Next: User Management" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              System Architecture
+              User Management
             </div>
           </div>
           <div class="md-footer__button md-icon">
